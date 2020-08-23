@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 install.packages("leaflet")
 
 ```
-
+#23 june 2020
 ```{r,eval=FALSE}
 library(leaflet)
 calvary_icon<-makeIcon(iconUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHqqUNsSgkldhNWtbfNjU2lKFfFsRTqDbkQw&usqp=CAU",iconWidth = 31*215/230,iconHeight = 31,
