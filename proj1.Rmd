@@ -1,0 +1,26 @@
+---
+
+date: "6/30/2020"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+## Slide with Plot
+
+```{r}
+library(leaflet)
+calvary_icon<-makeIcon(iconUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHqqUNsSgkldhNWtbfNjU2lKFfFsRTqDbkQw&usqp=CAU",iconWidth = 31*215/230,iconHeight = 31,
+                       iconAnchorX = 31*215/230/2,iconAnchorY = 16)
+
+
+my_map<-
+  leaflet()%>%
+  addTiles()%>%
+  addMarkers(lat=17.4870,lng=78.3680,popup="Calvary",icon = calvary_icon)
+
+my_map
+
+```
+
